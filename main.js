@@ -8,10 +8,10 @@ var showResultsButton = document.querySelector('#result-button');
 showResultsButton.addEventListener('click', showMessage)
 
 function showMessage() {
-  var quotes = chooseOption()
+  var message = chooseOption()
   messageResult.innerHTML = ''
   messageResult.innerHTML += `
-    <p>${quotes[getRandomIndex(quotes)]}</p>
+    <p>${message}</p>
   `
 }
 
@@ -19,9 +19,11 @@ function chooseOption() {
   var choice = getRadioValue()
 
   if(choice === 'affirmation') {
-    return affirmations
+    return affirmations[getRandomIndex(affirmations)]
   } else if (choice === 'mantra') {
-    return mantras
+    return mantras[getRandomIndex(mantras)]
+  } else {
+    return 'Choose the type of message you would like to see.'
   }
 }
 
