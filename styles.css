@@ -8,6 +8,7 @@ black - #000000;
 */
 html {
   background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -48,7 +49,9 @@ article {
 }
 
 .message-options {
-  margin: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 40px;
 }
 
 
@@ -73,4 +76,37 @@ button {
 
 img {
   width: 10%;
+}
+
+/* quote list page */
+
+.message-lists {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.message-lists > section {
+  width: 40%;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.message-lists > ul {
+  display: block;
+}
+
+li {
+  font-style: italic;
+  text-align: left;
+  margin: 8px 0px;
+}
+
+.return-button {
+  margin-top: 10px;
+  border-width: 1px;
+  border-color: #ffffff;
+  padding: 5px 10px;
 }
