@@ -8,6 +8,7 @@ black - #000000;
 */
 html {
   background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -74,3 +75,5 @@ button {
 img {
   width: 10%;
 }
+
+/* quote list page */
